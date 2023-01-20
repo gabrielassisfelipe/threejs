@@ -1,1 +1,13 @@
-<canvas #canvas id="canvas"></canvas>
+<div class="cabecalho-geral">
+    <button mat-raised-button color="primary" (click)="navegar('three')">Three</button>
+    <button mat-raised-button color="primary" (click)="navegar('gravidade')">Gravidade</button>
+    <button mat-raised-button color="primary" (click)="navegar('camera-three')">Controle Camera</button>
+    <button mat-raised-button color="primary" (click)="navegar('controle-objeto-three')">Controle Objeto</button>
+    <button mat-raised-button color="primary" (click)="navegar('criar-objetos-three')">Criar Objetos</button>
+    <button mat-raised-button color="primary" (click)="navegar('interagir-objetos-three')">Interagir Objetos</button>
+    <button mat-raised-button color="primary" (click)="navegar('montar-blocos-three')">Montar Blocos</button>
+</div>
+
+<div class="container-principal">
+    <router-outlet></router-outlet>
+</div>

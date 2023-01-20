@@ -1,0 +1,23 @@
+#canvasControleObjetoThree {
+    cursor: crosshair;
+}
+
+.formulario {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+
+    form {
+        
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    button {
+        width: 150px;
+        margin-left: 20px;
+    }
+}

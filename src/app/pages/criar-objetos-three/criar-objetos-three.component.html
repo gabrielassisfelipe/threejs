@@ -1,0 +1,21 @@
+<div class="formulario">
+    <form [formGroup]="form">
+        <mat-form-field appearance="outline">
+            <mat-label>Largura (cm)</mat-label>
+            <input matInput formControlName="largura" mask="separator.2" thousandSeparator=".">
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Altura (cm)</mat-label>
+            <input matInput formControlName="altura" mask="separator.2" thousandSeparator=".">
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Profundidade (cm)</mat-label>
+            <input matInput formControlName="profundidade" mask="separator.2" thousandSeparator=".">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button color="primary" (click)="criarObjeto(form.value)">Criar</button>
+</div>
+<canvas #canvasCriarObjetoThree id="canvasCriarObjetoThree" [width]="widthCanvas" [height]="heightCanvas"></canvas>
